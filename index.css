@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  background-color: #eb5a3c;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  font-size: 80px;
+  margin-bottom: 20px;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.score {
+  background-color: black; /* Fixed black background */
+  color: white; /* Corrected color with hex notation */
+  font-size: 80px; /* Text size */
+  text-align: center; /* Center the text horizontally */
+
+  width: 330px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  display: flex; /* Flexbox for centering content */
+  justify-content: center; /* Center text horizontally */
+  align-items: center; /* Center text vertically */
+  margin: auto; /* Center the element horizontally in its container */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  display: flex; /* Use Flexbox for the button container */
+  flex-direction: row; /* Ensure buttons are arranged in a row */
+  justify-content: space-around; /* Space the buttons evenly */
+  width: 100%; /* Optional: Adjust width as needed */
+}
+
+.buttons p {
+  margin: 10px 0; /* Fix margin syntax */
+  padding: 20px 20px; /* Add padding for a button-like appearance */
+  color: black;
+  background-color: #df9755; /* Button background color */
+  border: 2px solid #000; /* Add a border with 2px width, black color */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center text inside the button */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  display: inline-block; /* Ensure buttons behave like inline elements */
+}
+
+.score {
+  background-color: black; /* Darker color for contrast */
+  color: #ffffff;
+  font-size: 100px;
+  width: 250px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  margin-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Spacing between buttons */
+}
+
+.buttons p {
+  padding: 15px 30px; /* Larger buttons */
+  font-size: 20px; /* Bigger text */
+  background-color: #eb5a3c;
+  color: #ffffff;
+  border: 2px solid #e64a19;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.buttons p:hover {
+  background-color: #e64a19; /* Darken on hover */
+  transform: scale(1.05); /* Slight scale effect */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin: 0 100px; /* Adds horizontal space between the cards */
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Card shadow */
+  text-align: center;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-card {
+  background: #ffffff; /* White background */
+  padding: 20px 50px; /* Add padding for spacing */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Card shadow for a 3D effect */
+  text-align: center; /* Center-align the text */
+  margin: 50px auto 50px auto; /* Add top margin (50px), horizontal centering, and bottom margin (20px) */
+  max-width: 400px; /* Set a max width to keep it compact */
+}
+
+.header-card h1 {
+  font-size: 36px; /* Large title size */
+  color: black; /* Dark gray text for contrast */
+  margin: 0; /* Remove default margin for consistent spacing */
+}
+
+.reset-card {
+  background-color: red;
+  color: white;
+  border: none; /* Removes the border */
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background-color 0.2s;
+  display: block; /* Center the button */
+  margin: 30px auto; /* Space around the button */
+}
+
+.reset-card:hover {
+  background-color: red;
+  transform: scale(1.05);
+}

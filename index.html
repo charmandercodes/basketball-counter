@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="header-card">
+      <h1>Basketball Scorecard</h1>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h3>HOME</h3>
+          <p id="homescore" class="score">0</p>
+        </div>
+        <div class="buttons">
+          <p onclick="updateScore('home', 1)">+1</p>
+          <p onclick="updateScore('home', 2)">+2</p>
+          <p onclick="updateScore('home', 3)">+3</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h3>GUEST</h3>
+          <p id="guestscore" class="score">0</p>
+        </div>
+        <div class="buttons">
+          <p onclick="updateScore('guest', 1)">+1</p>
+          <p onclick="updateScore('guest', 2)">+2</p>
+          <p onclick="updateScore('guest', 3)">+3</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <button id="resetButton" class="reset-card">Reset</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
